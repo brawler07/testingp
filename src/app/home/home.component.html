@@ -1,0 +1,10 @@
+<!-- <app-music></app-music> <app-video></app-video> -->
+<h1>hello world</h1>
+
+<form [formGroup]="fg">
+    <input type="text" formControlName="username">
+    <input type="text" formControlName="email">
+    <input type="text" formControlNmae="Mobile" *ngIf="flag">
+    <button (click)="addField()">add</button>
+    <button (click)="remField()">Remove</button>
+</form>
